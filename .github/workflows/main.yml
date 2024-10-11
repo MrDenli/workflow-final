@@ -3,9 +3,10 @@ name: CI/CD Pipeline for Parcel Service
 on:
   push:
     branches:
-      - main
-    tags:
-      - '*'
+      - first-iteration
+  pull_request:
+    branches:
+      - first-iteration
 
 jobs:
   lint_and_test:
